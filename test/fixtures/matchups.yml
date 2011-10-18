@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  home: 1
+  away: 1
+  week: 1
+  winner: 1
+
+two:
+  home: 1
+  away: 1
+  week: 1
+  winner: 1

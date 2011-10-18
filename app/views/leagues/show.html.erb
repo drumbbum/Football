@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Admin:</b>
+  <%= @league.admin %>
+</p>
+
+<p>
+  <b>Repick:</b>
+  <%= @league.Repick %>
+</p>
+
+
+<%= link_to 'Edit', edit_league_path(@league) %> |
+<%= link_to 'Back', leagues_path %>

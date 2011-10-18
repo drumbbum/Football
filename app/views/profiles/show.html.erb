@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First Name:</b>
+  <%= @profile.first %>
+</p>
+
+<p>
+  <b>Last Name:</b>
+  <%= @profile.last %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%= @profile.paid %>
+</p>
+
+<p>
+  <b>Favorite Team:</b>
+  <%= Team.find_by_id(@profile.favorite).name %>
+</p>
+
+<p>
+	<% if my_profile?(@profile) %>
+	<b>This is my profile</b>
+	<% end %>
+</p>
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
