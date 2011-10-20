@@ -56,6 +56,7 @@ class ProfilesController < ApplicationController
   def create
     @profile = Profile.new(params[:profile])
     @profile.user_id = current_user.id
+    @profile.num_of_picks = params[:num_of_picks]
 
     respond_to do |format|
       if @profile.save
@@ -94,10 +95,5 @@ class ProfilesController < ApplicationController
       format.html { redirect_to(profiles_url) }
       format.xml  { head :ok }
     end
-  end
-  
-  private
-  def has_profile?
-    current_user.profile
   end
 end

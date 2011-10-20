@@ -12,7 +12,7 @@
 <% @leagues.each do |league| %>
   <tr>
     <td><%= league.admin %></td>
-    <td><%= league.Repick %></td>
+    <td><%= league.repick %></td>
     <td><%= link_to 'Show', league %></td>
     <td><%= link_to 'Edit', edit_league_path(league) %></td>
     <td><%= link_to 'Destroy', league, :confirm => 'Are you sure?', :method => :delete %></td>

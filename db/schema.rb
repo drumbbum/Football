@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20111018173428) do
   end
 
   create_table "leagues", :force => true do |t|
+    t.string   "name"
     t.integer  "admin"
     t.boolean  "repick"
     t.datetime "created_at"
@@ -49,7 +50,7 @@ ActiveRecord::Schema.define(:version => 20111018173428) do
     t.string   "first"
     t.string   "last"
     t.boolean  "paid"
-    t.integer  "picks"
+    t.integer  "num_of_picks"
     t.integer  "favorite"
     t.integer  "user_id"
     t.integer  "league_id"

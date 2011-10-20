@@ -4,7 +4,7 @@ class CreateProfiles < ActiveRecord::Migration
       t.string :first
       t.string :last
       t.boolean :paid
-      t.integer :picks
+      t.integer :num_of_picks
       t.integer :favorite
       t.integer :user_id
       t.integer :league_id

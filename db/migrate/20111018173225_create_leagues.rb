@@ -1,6 +1,7 @@
 class CreateLeagues < ActiveRecord::Migration
   def self.up
     create_table :leagues do |t|
+      t.string :name
       t.integer :admin
       t.boolean :repick
 

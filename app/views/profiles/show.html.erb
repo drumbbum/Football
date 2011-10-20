@@ -21,6 +21,16 @@
 </p>
 
 <p>
+  <b>Number of Picks</b>
+  <%= @profile.num_of_picks %>
+</p>
+
+<p>
+  <b>Member of League</b>
+  <%= @profile.league.name %>
+</p>
+
+<p>
 	<% if my_profile?(@profile) %>
 	<b>This is my profile</b>
 	<% end %>

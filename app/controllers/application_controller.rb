@@ -2,10 +2,18 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   helper_method :league_admin?
+  helper_method :has_profile?
   
   private
   
   def league_admin?
-    current_user.profile.league.admin.eql?(current_user.id)
+    if has_profile?
+      current_user.profile.league.admin.eql?(current_user.id)
+    else
+    end
+  end
+  
+  def has_profile?
+    current_user.profile
   end
 end
