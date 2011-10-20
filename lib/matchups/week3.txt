@@ -1,0 +1,16 @@
+New England at Buffalo 	1:00 PM 	CBS
+San Francisco at Cincinnati 	1:00 PM 	FOX
+Miami at Cleveland 	1:00 PM 	CBS
+Denver at Tennessee 	1:00 PM 	CBS
+Detroit at Minnesota 	1:00 PM 	FOX
+Houston at New Orleans 	1:00 PM 	CBS
+New York Giants at Philadelphia 	1:00 PM 	FOX
+Jacksonville at Carolina 	1:00 PM 	CBS
+Kansas City at San Diego 	4:05 PM 	CBS
+New York Jets at Oakland 	4:05 PM 	CBS
+Baltimore at St. Louis 	4:05 PM 	CBS
+Arizona at Seattle 	4:15 PM 	FOX
+Atlanta at Tampa Bay 	4:15 PM 	FOX
+Green Bay at Chicago 	4:15 PM 	FOX
+Pittsburgh at Indianapolis 	8:20 PM 	NBC
+Washington at Dallas 	8:30 PM 	ESPN

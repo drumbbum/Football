@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20111018173428) do
     t.integer  "away"
     t.integer  "week"
     t.integer  "winner"
+    t.date     "time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -57,7 +58,9 @@ ActiveRecord::Schema.define(:version => 20111018173428) do
   end
 
   create_table "teams", :force => true do |t|
+    t.string   "city"
     t.string   "name"
+    t.string   "full_name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

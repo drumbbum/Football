@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :favorite %> Team<br />
-    <%= collection_select(:profile, :favorite, Team.all, :id, :name) %>
+    <%= collection_select(:profile, :favorite, Team.all, :id, :full_name) %>
   </div>
   <div class="actions">
     <%= f.submit %>

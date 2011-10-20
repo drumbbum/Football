@@ -34,6 +34,10 @@ class ProfilesController < ApplicationController
   # GET /profiles/new
   # GET /profiles/new.xml
   def new
+    if has_profile?
+      redirect_to profiles_path
+      return
+    end
     @profile = Profile.new
 
     respond_to do |format|
@@ -90,5 +94,10 @@ class ProfilesController < ApplicationController
       format.html { redirect_to(profiles_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  private
+  def has_profile?
+    current_user.profile
   end
 end

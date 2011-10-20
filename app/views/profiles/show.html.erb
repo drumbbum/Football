@@ -26,6 +26,7 @@
 	<% end %>
 </p>
 
-
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<% if my_profile?(@profile) || league_admin? %>
+<%= link_to 'Edit Profile', edit_profile_path(@profile) %> |
+<% end %>
 <%= link_to 'Back', profiles_path %>

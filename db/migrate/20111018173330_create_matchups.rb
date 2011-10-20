@@ -5,6 +5,7 @@ class CreateMatchups < ActiveRecord::Migration
       t.integer :away
       t.integer :week
       t.integer :winner
+      t.date :time
 
       t.timestamps
     end

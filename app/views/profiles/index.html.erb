@@ -18,8 +18,13 @@
     <td><%= profile.paid %></td>
     <td><%= Team.find_by_id(profile.favorite).name %></td>
     <td><%= link_to 'Show', profile %></td>
-    <td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+	<% if my_profile?(profile) || league_admin? %>
+    	<td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+	<% end %>
+	
+	<% if league_admin? %>
     <td><%= link_to 'Destroy', profile, :confirm => 'Are you sure?', :method => :delete %></td>
+	<% end %>
   </tr>
 <% end %>
 </table>
