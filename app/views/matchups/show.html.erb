@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Home:</b>
+  <%= getFullName(@matchup.home) %>
+</p>
+
+<p>
+  <b>Away:</b>
+  <%= getFullName(@matchup.away) %>
+</p>
+
+<p>
+  <b>Week:</b>
+  <%= @matchup.week %>
+</p>
+
+<p>
+  <b>Winner:</b>
+  <%= getFullName(@matchup.winner) %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @matchup.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_matchup_path(@matchup) %> |
+<%= link_to 'Back', :controller => "matchups", :action => "index", :week_num => @matchup.week %>

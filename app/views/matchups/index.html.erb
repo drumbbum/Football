@@ -1,0 +1,26 @@
+<h1>Listing matchups for Week <%= @week_num %></h1>
+
+<%= render "weeks" %>
+
+<table>
+  <tr>
+    <th>Matchup</th>
+    <th>Winner</th>
+    <th>Time</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @matchups.each do |matchup| %>
+  <tr>
+    <td><%= link_to getFullName(matchup.away), :controller => "matchups", :action => "edit", :id => matchup.id, :winner => matchup.away %> @ 
+    <%= link_to getFullName(matchup.home), :controller => "matchups", :action => "edit", :id => matchup.id, :winner => matchup.home %></td>
+        <% if Team.find_by_id(matchup.winner)%>
+    <td><%= getFullName(matchup.winner) %></td>
+        <% end %>
+    <td><%= matchup.time %></td>
+    <td><%= link_to 'Show', matchup %></td>
+    <td><%= link_to 'Edit', edit_matchup_path(matchup) %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,37 @@
+<h1>Select Winner</h1>
+
+<%= form_for(@matchup) do |f| %>
+  <% if @matchup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@matchup.errors.count, "error") %> prohibited this matchup from being saved:</h2>
+
+      <ul>
+      <% @matchup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <h2>Matchup: 
+  <%= getFullName(@matchup.away) %> @ <%= getFullName(@matchup.home) %></h2>
+
+  <div class="field">
+    <h3>Select Winner</h3>
+
+    <% if @selected_winner %>
+    <select name='winner'>
+      <%= options_from_collection_for_select(@teams, "id", :full_name, @selected_winner.id) %>
+    </select>
+    <% else %>
+      <%= collection_select(:matchup, :winner, @teams, :id, :full_name)%>
+    <% end %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Show', @matchup %> |
+<%= link_to 'Back', :controller => "matchups", :action => "index", :week_num => @matchup.week %>

@@ -7,6 +7,14 @@ class ApplicationController < ActionController::Base
   private
   
   def league_admin?
+    if league_admin
+      true
+    else
+      flash
+    end
+  end
+  
+  def league_admin
     if has_profile?
       current_user.profile.league.admin.eql?(current_user.id)
     else

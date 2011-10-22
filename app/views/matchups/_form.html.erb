@@ -1,0 +1,37 @@
+<%= form_for(@matchup) do |f| %>
+  <% if @matchup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@matchup.errors.count, "error") %> prohibited this matchup from being saved:</h2>
+
+      <ul>
+      <% @matchup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :home %><br />
+    <%= f.text_field :home %>
+  </div>
+  <div class="field">
+    <%= f.label :away %><br />
+    <%= f.text_field :away %>
+  </div>
+  <div class="field">
+    <%= f.label :week %><br />
+    <%= f.text_field :week %>
+  </div>
+  <div class="field">
+    <%= f.label :winner %><br />
+    <%= f.text_field :winner %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.datetime_select :time %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

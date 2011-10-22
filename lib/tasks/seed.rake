@@ -1,5 +1,9 @@
 namespace :seed do
   
+  desc "Run all necessary tasks"
+  task :all => [:league, :matchup] do
+  end
+  
   desc "Add Team Names to Team"
   task :team => :environment do
     first_word = ['Green','Kansas','New','San','St.','Tampa','NY']
@@ -24,7 +28,7 @@ namespace :seed do
   end
   
   desc "Add Matchups to Database"
-  task :matchup => :environment do
+  task :matchup => :team do
     load "lib/processMatchup.rb"
     pm = ProcessMatchup.new
     (1..17).each do |i|
@@ -38,4 +42,8 @@ namespace :seed do
     end
   end
   
+  desc "Seed a league"
+  task :league => :environment do
+    League.create(:name => "Example League", :admim => 1, :repick => true)
+  end
 end

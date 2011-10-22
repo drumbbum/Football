@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111018173428) do
+ActiveRecord::Schema.define(:version => 20111021200613) do
 
   create_table "comments", :force => true do |t|
     t.integer  "author"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20111018173428) do
     t.integer  "away"
     t.integer  "week"
     t.integer  "winner"
-    t.date     "time"
+    t.datetime "time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
