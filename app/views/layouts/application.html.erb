@@ -19,6 +19,12 @@
 	    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
 	  <% end %>
 	</div>
+	
+	<div id="tabs">
+    <%= link_to "Profiles", profiles_path %>
+    <%= link_to "Matchups", matchups_path(@matchup, :week_num => 1)  %>
+    <%= link_to "Leagues", leagues_path%>
+	</div>
 
 <%= yield %>
 

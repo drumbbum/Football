@@ -15,10 +15,14 @@
   <tr>
     <td><%= link_to getFullName(matchup.away), :controller => "matchups", :action => "edit", :id => matchup.id, :winner => matchup.away %> @ 
     <%= link_to getFullName(matchup.home), :controller => "matchups", :action => "edit", :id => matchup.id, :winner => matchup.home %></td>
+    
         <% if Team.find_by_id(matchup.winner)%>
     <td><%= getFullName(matchup.winner) %></td>
+        <% else %>
+        <td>TBD</td>
         <% end %>
-    <td><%= matchup.time %></td>
+        
+    <td><%= matchup.time %> TBD </td>
     <td><%= link_to 'Show', matchup %></td>
     <td><%= link_to 'Edit', edit_matchup_path(matchup) %></td>
   </tr>
