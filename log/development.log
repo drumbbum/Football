@@ -26343,3 +26343,811 @@ Started GET "/leagues" for 127.0.0.1 at 2011-10-23 16:28:15 -0400
   [1m[36mLeague Load (0.1ms)[0m  [1mSELECT "leagues".* FROM "leagues"[0m
 Rendered leagues/index.html.erb within layouts/application (7.6ms)
 Completed 200 OK in 52ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from <top (required)> at /Users/markvance/Desktop/Football/config/initializers/data_loader.rb:5)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "leagues" ("name", "admin", "repick", "created_at", "updated_at") VALUES ('Example League', 1, 't', '2011-10-23 21:53:05.508281', '2011-10-23 21:53:05.508281')
+  [1m[36mTeam Load (0.4ms)[0m  [1mSELECT "teams".* FROM "teams"[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 20, 1, NULL, NULL, '2011-10-23 21:53:05.580621', '2011-10-23 21:53:05.580621')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 2, 1, NULL, NULL, '2011-10-23 21:53:05.601309', '2011-10-23 21:53:05.601309')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 7, 1, NULL, NULL, '2011-10-23 21:53:05.603951', '2011-10-23 21:53:05.603951')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 4, 1, NULL, NULL, '2011-10-23 21:53:05.606338', '2011-10-23 21:53:05.606338')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 24, 1, NULL, NULL, '2011-10-23 21:53:05.609000', '2011-10-23 21:53:05.609000')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 31, 1, NULL, NULL, '2011-10-23 21:53:05.611593', '2011-10-23 21:53:05.611593')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 25, 1, NULL, NULL, '2011-10-23 21:53:05.613965', '2011-10-23 21:53:05.613965')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 14, 1, NULL, NULL, '2011-10-23 21:53:05.616317', '2011-10-23 21:53:05.616317')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 11, 1, NULL, NULL, '2011-10-23 21:53:05.618820', '2011-10-23 21:53:05.618820')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 21, 1, NULL, NULL, '2011-10-23 21:53:05.621415', '2011-10-23 21:53:05.621415')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 5, 1, NULL, NULL, '2011-10-23 21:53:05.624325', '2011-10-23 21:53:05.624325')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 18, 1, NULL, NULL, '2011-10-23 21:53:05.627244', '2011-10-23 21:53:05.627244')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 28, 1, NULL, NULL, '2011-10-23 21:53:05.630069', '2011-10-23 21:53:05.630069')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 9, 1, NULL, NULL, '2011-10-23 21:53:05.633049', '2011-10-23 21:53:05.633049')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 19, 1, NULL, NULL, '2011-10-23 21:53:05.635666', '2011-10-23 21:53:05.635666')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 23, 1, NULL, NULL, '2011-10-23 21:53:05.638099', '2011-10-23 21:53:05.638099')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 16, 2, NULL, NULL, '2011-10-23 21:53:05.640603', '2011-10-23 21:53:05.640603')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 3, 2, NULL, NULL, '2011-10-23 21:53:05.643490', '2011-10-23 21:53:05.643490')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 8, 2, NULL, NULL, '2011-10-23 21:53:05.646042', '2011-10-23 21:53:05.646042')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 23, 2, NULL, NULL, '2011-10-23 21:53:05.648593', '2011-10-23 21:53:05.648593')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 30, 2, NULL, NULL, '2011-10-23 21:53:05.650823', '2011-10-23 21:53:05.650823')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 6, 2, NULL, NULL, '2011-10-23 21:53:05.653028', '2011-10-23 21:53:05.653028')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 15, 2, NULL, NULL, '2011-10-23 21:53:05.655471', '2011-10-23 21:53:05.655471')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 28, 2, NULL, NULL, '2011-10-23 21:53:05.657714', '2011-10-23 21:53:05.657714')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 1, 2, NULL, NULL, '2011-10-23 21:53:05.660034', '2011-10-23 21:53:05.660034')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 12, 2, NULL, NULL, '2011-10-23 21:53:05.662349', '2011-10-23 21:53:05.662349')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 9, 2, NULL, NULL, '2011-10-23 21:53:05.664697', '2011-10-23 21:53:05.664697')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 26, 2, NULL, NULL, '2011-10-23 21:53:05.667035', '2011-10-23 21:53:05.667035')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 7, 2, NULL, NULL, '2011-10-23 21:53:05.669270', '2011-10-23 21:53:05.669270')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 13, 2, NULL, NULL, '2011-10-23 21:53:05.671486', '2011-10-23 21:53:05.671486')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 24, 2, NULL, NULL, '2011-10-23 21:53:05.673754', '2011-10-23 21:53:05.673754')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 29, 2, NULL, NULL, '2011-10-23 21:53:05.676283', '2011-10-23 21:53:05.676283')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 19, 3, NULL, NULL, '2011-10-23 21:53:05.678722', '2011-10-23 21:53:05.678722')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 27, 3, NULL, NULL, '2011-10-23 21:53:05.681012', '2011-10-23 21:53:05.681012')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 17, 3, NULL, NULL, '2011-10-23 21:53:05.683305', '2011-10-23 21:53:05.683305')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 10, 3, NULL, NULL, '2011-10-23 21:53:05.685701', '2011-10-23 21:53:05.685701')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 11, 3, NULL, NULL, '2011-10-23 21:53:05.688094', '2011-10-23 21:53:05.688094')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 13, 3, NULL, NULL, '2011-10-23 21:53:05.690845', '2011-10-23 21:53:05.690845')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 21, 3, NULL, NULL, '2011-10-23 21:53:05.693840', '2011-10-23 21:53:05.693840')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 15, 3, NULL, NULL, '2011-10-23 21:53:05.696271', '2011-10-23 21:53:05.696271')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 16, 3, NULL, NULL, '2011-10-23 21:53:05.698877', '2011-10-23 21:53:05.698877')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 22, 3, NULL, NULL, '2011-10-23 21:53:05.701779', '2011-10-23 21:53:05.701779')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 3, 3, NULL, NULL, '2011-10-23 21:53:05.704173', '2011-10-23 21:53:05.704173')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 1, 3, NULL, NULL, '2011-10-23 21:53:05.706625', '2011-10-23 21:53:05.706625')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 2, 3, NULL, NULL, '2011-10-23 21:53:05.708876', '2011-10-23 21:53:05.708876')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 12, 3, NULL, NULL, '2011-10-23 21:53:05.711180', '2011-10-23 21:53:05.711180')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 25, 3, NULL, NULL, '2011-10-23 21:53:05.713447', '2011-10-23 21:53:05.713447')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 32, 3, NULL, NULL, '2011-10-23 21:53:05.715699', '2011-10-23 21:53:05.715699')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 5, 4, NULL, NULL, '2011-10-23 21:53:05.718047', '2011-10-23 21:53:05.718047')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 4, 4, NULL, NULL, '2011-10-23 21:53:05.720137', '2011-10-23 21:53:05.720137')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 31, 4, NULL, NULL, '2011-10-23 21:53:05.722390', '2011-10-23 21:53:05.722390')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 11, 4, NULL, NULL, '2011-10-23 21:53:05.724665', '2011-10-23 21:53:05.724665')[0m
+  [1m[35mTeam Load (14.3ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 32, 4, NULL, NULL, '2011-10-23 21:53:05.741338', '2011-10-23 21:53:05.741338')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 27, 4, NULL, NULL, '2011-10-23 21:53:05.743742', '2011-10-23 21:53:05.743742')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 18, 4, NULL, NULL, '2011-10-23 21:53:05.745878', '2011-10-23 21:53:05.745878')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 20, 4, NULL, NULL, '2011-10-23 21:53:05.748042', '2011-10-23 21:53:05.748042')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 25, 4, NULL, NULL, '2011-10-23 21:53:05.750227', '2011-10-23 21:53:05.750227')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 21, 4, NULL, NULL, '2011-10-23 21:53:05.752698', '2011-10-23 21:53:05.752698')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 2, 4, NULL, NULL, '2011-10-23 21:53:05.754937', '2011-10-23 21:53:05.754937')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 17, 4, NULL, NULL, '2011-10-23 21:53:05.757191', '2011-10-23 21:53:05.757191')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 10, 4, NULL, NULL, '2011-10-23 21:53:05.759405', '2011-10-23 21:53:05.759405')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 19, 4, NULL, NULL, '2011-10-23 21:53:05.761628', '2011-10-23 21:53:05.761628')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 22, 4, NULL, NULL, '2011-10-23 21:53:05.764128', '2011-10-23 21:53:05.764128')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 14, 4, NULL, NULL, '2011-10-23 21:53:05.766455', '2011-10-23 21:53:05.766455')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 24, 5, NULL, NULL, '2011-10-23 21:53:05.768902', '2011-10-23 21:53:05.768902')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 16, 5, NULL, NULL, '2011-10-23 21:53:05.771192', '2011-10-23 21:53:05.771192')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 1, 5, NULL, NULL, '2011-10-23 21:53:05.773587', '2011-10-23 21:53:05.773587')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 28, 5, NULL, NULL, '2011-10-23 21:53:05.776159', '2011-10-23 21:53:05.776159')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 31, 5, NULL, NULL, '2011-10-23 21:53:05.778813', '2011-10-23 21:53:05.778813')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 20, 5, NULL, NULL, '2011-10-23 21:53:05.781191', '2011-10-23 21:53:05.781191')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 7, 5, NULL, NULL, '2011-10-23 21:53:05.784058', '2011-10-23 21:53:05.784058')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 23, 5, NULL, NULL, '2011-10-23 21:53:05.786449', '2011-10-23 21:53:05.786449')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 30, 5, NULL, NULL, '2011-10-23 21:53:05.788777', '2011-10-23 21:53:05.788777')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 22, 5, NULL, NULL, '2011-10-23 21:53:05.791399', '2011-10-23 21:53:05.791399')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 26, 5, NULL, NULL, '2011-10-23 21:53:05.793699', '2011-10-23 21:53:05.793699')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 12, 5, NULL, NULL, '2011-10-23 21:53:05.796020', '2011-10-23 21:53:05.796020')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 6, 5, NULL, NULL, '2011-10-23 21:53:05.798279', '2011-10-23 21:53:05.798279')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 5, 6, NULL, NULL, '2011-10-23 21:53:05.800750', '2011-10-23 21:53:05.800750')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 14, 6, NULL, NULL, '2011-10-23 21:53:05.802991', '2011-10-23 21:53:05.802991')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 27, 6, NULL, NULL, '2011-10-23 21:53:05.805310', '2011-10-23 21:53:05.805310')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 29, 6, NULL, NULL, '2011-10-23 21:53:05.807605', '2011-10-23 21:53:05.807605')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 24, 6, NULL, NULL, '2011-10-23 21:53:05.809874', '2011-10-23 21:53:05.809874')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 4, 6, NULL, NULL, '2011-10-23 21:53:05.812437', '2011-10-23 21:53:05.812437')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 15, 6, NULL, NULL, '2011-10-23 21:53:05.814934', '2011-10-23 21:53:05.814934')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 13, 6, NULL, NULL, '2011-10-23 21:53:05.817394', '2011-10-23 21:53:05.817394')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 8, 6, NULL, NULL, '2011-10-23 21:53:05.819787', '2011-10-23 21:53:05.819787')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 9, 6, NULL, NULL, '2011-10-23 21:53:05.822456', '2011-10-23 21:53:05.822456')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 20, 6, NULL, NULL, '2011-10-23 21:53:05.824991', '2011-10-23 21:53:05.824991')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 18, 6, NULL, NULL, '2011-10-23 21:53:05.827499', '2011-10-23 21:53:05.827499')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 17, 6, NULL, NULL, '2011-10-23 21:53:05.830178', '2011-10-23 21:53:05.830178')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 28, 7, NULL, NULL, '2011-10-23 21:53:05.832787', '2011-10-23 21:53:05.832787')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 2, 7, NULL, NULL, '2011-10-23 21:53:05.835295', '2011-10-23 21:53:05.835295')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 13, 7, NULL, NULL, '2011-10-23 21:53:05.837751', '2011-10-23 21:53:05.837751')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 10, 7, NULL, NULL, '2011-10-23 21:53:05.840156', '2011-10-23 21:53:05.840156')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 26, 7, NULL, NULL, '2011-10-23 21:53:05.842816', '2011-10-23 21:53:05.842816')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 6, 7, NULL, NULL, '2011-10-23 21:53:05.845214', '2011-10-23 21:53:05.845214')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 32, 7, NULL, NULL, '2011-10-23 21:53:05.847617', '2011-10-23 21:53:05.847617')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 25, 7, NULL, NULL, '2011-10-23 21:53:05.850205', '2011-10-23 21:53:05.850205')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 16, 7, NULL, NULL, '2011-10-23 21:53:05.852510', '2011-10-23 21:53:05.852510')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 12, 7, NULL, NULL, '2011-10-23 21:53:05.854786', '2011-10-23 21:53:05.854786')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 29, 7, NULL, NULL, '2011-10-23 21:53:05.857037', '2011-10-23 21:53:05.857037')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 14, 7, NULL, NULL, '2011-10-23 21:53:05.859569', '2011-10-23 21:53:05.859569')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 3, 7, NULL, NULL, '2011-10-23 21:53:05.863029', '2011-10-23 21:53:05.863029')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 14, 8, NULL, NULL, '2011-10-23 21:53:05.866608', '2011-10-23 21:53:05.866608')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 20, 8, NULL, NULL, '2011-10-23 21:53:05.883991', '2011-10-23 21:53:05.883991')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 17, 8, NULL, NULL, '2011-10-23 21:53:05.888548', '2011-10-23 21:53:05.888548')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 18, 8, NULL, NULL, '2011-10-23 21:53:05.892534', '2011-10-23 21:53:05.892534')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 1, 8, NULL, NULL, '2011-10-23 21:53:05.896093', '2011-10-23 21:53:05.896093')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 15, 8, NULL, NULL, '2011-10-23 21:53:05.899246', '2011-10-23 21:53:05.899246')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 32, 8, NULL, NULL, '2011-10-23 21:53:05.902460', '2011-10-23 21:53:05.902460')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 11, 8, NULL, NULL, '2011-10-23 21:53:05.905955', '2011-10-23 21:53:05.905955')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 19, 8, NULL, NULL, '2011-10-23 21:53:05.908888', '2011-10-23 21:53:05.908888')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 8, 8, NULL, NULL, '2011-10-23 21:53:05.912576', '2011-10-23 21:53:05.912576')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 7, 8, NULL, NULL, '2011-10-23 21:53:05.916661', '2011-10-23 21:53:05.916661')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 9, 8, NULL, NULL, '2011-10-23 21:53:05.920241', '2011-10-23 21:53:05.920241')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 26, 8, NULL, NULL, '2011-10-23 21:53:05.923560', '2011-10-23 21:53:05.923560')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 22, 9, NULL, NULL, '2011-10-23 21:53:05.927751', '2011-10-23 21:53:05.927751')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 28, 9, NULL, NULL, '2011-10-23 21:53:05.930788', '2011-10-23 21:53:05.930788')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 2, 9, NULL, NULL, '2011-10-23 21:53:05.934015', '2011-10-23 21:53:05.934015')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 17, 9, NULL, NULL, '2011-10-23 21:53:05.937650', '2011-10-23 21:53:05.937650')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 27, 9, NULL, NULL, '2011-10-23 21:53:05.940981', '2011-10-23 21:53:05.940981')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 8, 9, NULL, NULL, '2011-10-23 21:53:05.944285', '2011-10-23 21:53:05.944285')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 30, 9, NULL, NULL, '2011-10-23 21:53:05.947587', '2011-10-23 21:53:05.947587')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 10, 9, NULL, NULL, '2011-10-23 21:53:05.951319', '2011-10-23 21:53:05.951319')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 7, 9, NULL, NULL, '2011-10-23 21:53:05.954427', '2011-10-23 21:53:05.954427')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 21, 9, NULL, NULL, '2011-10-23 21:53:05.957931', '2011-10-23 21:53:05.957931')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 29, 9, NULL, NULL, '2011-10-23 21:53:05.961020', '2011-10-23 21:53:05.961020')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 12, 9, NULL, NULL, '2011-10-23 21:53:05.964294', '2011-10-23 21:53:05.964294')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 3, 9, NULL, NULL, '2011-10-23 21:53:05.968020', '2011-10-23 21:53:05.968020')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 6, 9, NULL, NULL, '2011-10-23 21:53:05.971245', '2011-10-23 21:53:05.971245')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 23, 10, NULL, NULL, '2011-10-23 21:53:05.974747', '2011-10-23 21:53:05.974747')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 20, 10, NULL, NULL, '2011-10-23 21:53:05.977993', '2011-10-23 21:53:05.977993')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 11, 10, NULL, NULL, '2011-10-23 21:53:05.981260', '2011-10-23 21:53:05.981260')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 25, 10, NULL, NULL, '2011-10-23 21:53:05.984982', '2011-10-23 21:53:05.984982')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 29, 10, NULL, NULL, '2011-10-23 21:53:05.988531', '2011-10-23 21:53:05.988531')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 4, 10, NULL, NULL, '2011-10-23 21:53:05.991873', '2011-10-23 21:53:05.991873')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 15, 10, NULL, NULL, '2011-10-23 21:53:05.995172', '2011-10-23 21:53:05.995172')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 10, 10, NULL, NULL, '2011-10-23 21:53:05.997865', '2011-10-23 21:53:05.997865')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 32, 10, NULL, NULL, '2011-10-23 21:53:06.001584', '2011-10-23 21:53:06.001584')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 1, 10, NULL, NULL, '2011-10-23 21:53:06.004745', '2011-10-23 21:53:06.004745')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 13, 10, NULL, NULL, '2011-10-23 21:53:06.007483', '2011-10-23 21:53:06.007483')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 31, 10, NULL, NULL, '2011-10-23 21:53:06.010809', '2011-10-23 21:53:06.010809')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 3, 10, NULL, NULL, '2011-10-23 21:53:06.013952', '2011-10-23 21:53:06.013952')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 21, 10, NULL, NULL, '2011-10-23 21:53:06.017637', '2011-10-23 21:53:06.017637')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 19, 10, NULL, NULL, '2011-10-23 21:53:06.021153', '2011-10-23 21:53:06.021153')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 18, 10, NULL, NULL, '2011-10-23 21:53:06.024473', '2011-10-23 21:53:06.024473')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 22, 11, NULL, NULL, '2011-10-23 21:53:06.028098', '2011-10-23 21:53:06.028098')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 31, 11, NULL, NULL, '2011-10-23 21:53:06.031539', '2011-10-23 21:53:06.031539')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 15, 11, NULL, NULL, '2011-10-23 21:53:06.034790', '2011-10-23 21:53:06.034790')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 5, 11, NULL, NULL, '2011-10-23 21:53:06.038091', '2011-10-23 21:53:06.038091')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 30, 11, NULL, NULL, '2011-10-23 21:53:06.041085', '2011-10-23 21:53:06.041085')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 4, 11, NULL, NULL, '2011-10-23 21:53:06.044289', '2011-10-23 21:53:06.044289')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 23, 11, NULL, NULL, '2011-10-23 21:53:06.047576', '2011-10-23 21:53:06.047576')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 9, 11, NULL, NULL, '2011-10-23 21:53:06.051147', '2011-10-23 21:53:06.051147')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 7, 11, NULL, NULL, '2011-10-23 21:53:06.054330', '2011-10-23 21:53:06.054330')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 1, 11, NULL, NULL, '2011-10-23 21:53:06.057773', '2011-10-23 21:53:06.057773')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 28, 11, NULL, NULL, '2011-10-23 21:53:06.075259', '2011-10-23 21:53:06.075259')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 26, 11, NULL, NULL, '2011-10-23 21:53:06.078550', '2011-10-23 21:53:06.078550')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 24, 11, NULL, NULL, '2011-10-23 21:53:06.082162', '2011-10-23 21:53:06.082162')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 16, 11, NULL, NULL, '2011-10-23 21:53:06.085557', '2011-10-23 21:53:06.085557')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 12, 12, NULL, NULL, '2011-10-23 21:53:06.088898', '2011-10-23 21:53:06.088898')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 17, 12, NULL, NULL, '2011-10-23 21:53:06.092199', '2011-10-23 21:53:06.092199')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 27, 12, NULL, NULL, '2011-10-23 21:53:06.094656', '2011-10-23 21:53:06.094656')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 18, 12, NULL, NULL, '2011-10-23 21:53:06.097660', '2011-10-23 21:53:06.097660')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 8, 12, NULL, NULL, '2011-10-23 21:53:06.101612', '2011-10-23 21:53:06.101612')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 30, 12, NULL, NULL, '2011-10-23 21:53:06.105052', '2011-10-23 21:53:06.105052')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 5, 12, NULL, NULL, '2011-10-23 21:53:06.108548', '2011-10-23 21:53:06.108548')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 1, 12, NULL, NULL, '2011-10-23 21:53:06.111794', '2011-10-23 21:53:06.111794')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 4, 12, NULL, NULL, '2011-10-23 21:53:06.115612', '2011-10-23 21:53:06.115612')[0m
+  [1m[35mTeam Load (0.2ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 13, 12, NULL, NULL, '2011-10-23 21:53:06.119689', '2011-10-23 21:53:06.119689')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 6, 12, NULL, NULL, '2011-10-23 21:53:06.123030', '2011-10-23 21:53:06.123030')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 32, 12, NULL, NULL, '2011-10-23 21:53:06.125798', '2011-10-23 21:53:06.125798')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 19, 12, NULL, NULL, '2011-10-23 21:53:06.129137', '2011-10-23 21:53:06.129137')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 10, 12, NULL, NULL, '2011-10-23 21:53:06.132450', '2011-10-23 21:53:06.132450')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 25, 12, NULL, NULL, '2011-10-23 21:53:06.135876', '2011-10-23 21:53:06.135876')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 21, 12, NULL, NULL, '2011-10-23 21:53:06.139448', '2011-10-23 21:53:06.139448')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 24, 13, NULL, NULL, '2011-10-23 21:53:06.143294', '2011-10-23 21:53:06.143294')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 31, 13, NULL, NULL, '2011-10-23 21:53:06.146461', '2011-10-23 21:53:06.146461')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 16, 13, NULL, NULL, '2011-10-23 21:53:06.150209', '2011-10-23 21:53:06.150209')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 3, 13, NULL, NULL, '2011-10-23 21:53:06.153445', '2011-10-23 21:53:06.153445')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 23, 13, NULL, NULL, '2011-10-23 21:53:06.156927', '2011-10-23 21:53:06.156927')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 11, 13, NULL, NULL, '2011-10-23 21:53:06.160855', '2011-10-23 21:53:06.160855')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 5, 13, NULL, NULL, '2011-10-23 21:53:06.164017', '2011-10-23 21:53:06.164017')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 22, 13, NULL, NULL, '2011-10-23 21:53:06.167517', '2011-10-23 21:53:06.167517')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 2, 13, NULL, NULL, '2011-10-23 21:53:06.170787', '2011-10-23 21:53:06.170787')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 7, 13, NULL, NULL, '2011-10-23 21:53:06.174091', '2011-10-23 21:53:06.174091')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 10, 13, NULL, NULL, '2011-10-23 21:53:06.177524', '2011-10-23 21:53:06.177524')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 12, 13, NULL, NULL, '2011-10-23 21:53:06.181528', '2011-10-23 21:53:06.181528')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 9, 13, NULL, NULL, '2011-10-23 21:53:06.184769', '2011-10-23 21:53:06.184769')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 29, 13, NULL, NULL, '2011-10-23 21:53:06.188095', '2011-10-23 21:53:06.188095')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 14, 13, NULL, NULL, '2011-10-23 21:53:06.191419', '2011-10-23 21:53:06.191419')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 26, 13, NULL, NULL, '2011-10-23 21:53:06.194671', '2011-10-23 21:53:06.194671')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 8, 14, NULL, NULL, '2011-10-23 21:53:06.198175', '2011-10-23 21:53:06.198175')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 13, 14, NULL, NULL, '2011-10-23 21:53:06.201866', '2011-10-23 21:53:06.201866')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 18, 14, NULL, NULL, '2011-10-23 21:53:06.205852', '2011-10-23 21:53:06.205852')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 23, 14, NULL, NULL, '2011-10-23 21:53:06.208797', '2011-10-23 21:53:06.208797')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 20, 14, NULL, NULL, '2011-10-23 21:53:06.211959', '2011-10-23 21:53:06.211959')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 24, 14, NULL, NULL, '2011-10-23 21:53:06.215368', '2011-10-23 21:53:06.215368')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 16, 14, NULL, NULL, '2011-10-23 21:53:06.219430', '2011-10-23 21:53:06.219430')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 19, 14, NULL, NULL, '2011-10-23 21:53:06.222708', '2011-10-23 21:53:06.222708')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 2, 14, NULL, NULL, '2011-10-23 21:53:06.226943', '2011-10-23 21:53:06.226943')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 30, 14, NULL, NULL, '2011-10-23 21:53:06.230308', '2011-10-23 21:53:06.230308')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 14, 14, NULL, NULL, '2011-10-23 21:53:06.233713', '2011-10-23 21:53:06.233713')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 27, 14, NULL, NULL, '2011-10-23 21:53:06.236834', '2011-10-23 21:53:06.236834')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 6, 14, NULL, NULL, '2011-10-23 21:53:06.240214', '2011-10-23 21:53:06.240214')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 4, 14, NULL, NULL, '2011-10-23 21:53:06.243686', '2011-10-23 21:53:06.243686')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 21, 14, NULL, NULL, '2011-10-23 21:53:06.247166', '2011-10-23 21:53:06.247166')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 29, 14, NULL, NULL, '2011-10-23 21:53:06.263889', '2011-10-23 21:53:06.263889')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 15, 15, NULL, NULL, '2011-10-23 21:53:06.267941', '2011-10-23 21:53:06.267941')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (30, 9, 15, NULL, NULL, '2011-10-23 21:53:06.271408', '2011-10-23 21:53:06.271408')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 17, 15, NULL, NULL, '2011-10-23 21:53:06.274736', '2011-10-23 21:53:06.274736')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (6, 28, 15, NULL, NULL, '2011-10-23 21:53:06.277988', '2011-10-23 21:53:06.277988')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 31, 15, NULL, NULL, '2011-10-23 21:53:06.280972', '2011-10-23 21:53:06.280972')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 12, 15, NULL, NULL, '2011-10-23 21:53:06.284700', '2011-10-23 21:53:06.284700')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 7, 15, NULL, NULL, '2011-10-23 21:53:06.287076', '2011-10-23 21:53:06.287076')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 20, 15, NULL, NULL, '2011-10-23 21:53:06.289521', '2011-10-23 21:53:06.289521')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 32, 15, NULL, NULL, '2011-10-23 21:53:06.292234', '2011-10-23 21:53:06.292234')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 5, 15, NULL, NULL, '2011-10-23 21:53:06.294735', '2011-10-23 21:53:06.294735')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 11, 15, NULL, NULL, '2011-10-23 21:53:06.297320', '2011-10-23 21:53:06.297320')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 19, 15, NULL, NULL, '2011-10-23 21:53:06.299898', '2011-10-23 21:53:06.299898')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 22, 15, NULL, NULL, '2011-10-23 21:53:06.302482', '2011-10-23 21:53:06.302482')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 8, 15, NULL, NULL, '2011-10-23 21:53:06.304947', '2011-10-23 21:53:06.304947')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (26, 3, 15, NULL, NULL, '2011-10-23 21:53:06.307521', '2011-10-23 21:53:06.307521')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (27, 25, 15, NULL, NULL, '2011-10-23 21:53:06.310442', '2011-10-23 21:53:06.310442')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (14, 13, 16, NULL, NULL, '2011-10-23 21:53:06.312947', '2011-10-23 21:53:06.312947')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (4, 10, 16, NULL, NULL, '2011-10-23 21:53:06.315344', '2011-10-23 21:53:06.315344')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 1, 16, NULL, NULL, '2011-10-23 21:53:06.317842', '2011-10-23 21:53:06.317842')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (32, 18, 16, NULL, NULL, '2011-10-23 21:53:06.320244', '2011-10-23 21:53:06.320244')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (5, 30, 16, NULL, NULL, '2011-10-23 21:53:06.322701', '2011-10-23 21:53:06.322701')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (3, 8, 16, NULL, NULL, '2011-10-23 21:53:06.325049', '2011-10-23 21:53:06.325049')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (31, 15, 16, NULL, NULL, '2011-10-23 21:53:06.327537', '2011-10-23 21:53:06.327537')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (16, 23, 16, NULL, NULL, '2011-10-23 21:53:06.329972', '2011-10-23 21:53:06.329972')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 17, 16, NULL, NULL, '2011-10-23 21:53:06.332621', '2011-10-23 21:53:06.332621')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (22, 21, 16, NULL, NULL, '2011-10-23 21:53:06.335717', '2011-10-23 21:53:06.335717')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (25, 29, 16, NULL, NULL, '2011-10-23 21:53:06.338331', '2011-10-23 21:53:06.338331')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (11, 26, 16, NULL, NULL, '2011-10-23 21:53:06.340690', '2011-10-23 21:53:06.340690')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (28, 27, 16, NULL, NULL, '2011-10-23 21:53:06.343234', '2011-10-23 21:53:06.343234')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (9, 24, 16, NULL, NULL, '2011-10-23 21:53:06.345606', '2011-10-23 21:53:06.345606')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 6, 16, NULL, NULL, '2011-10-23 21:53:06.347893', '2011-10-23 21:53:06.347893')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 2, 16, NULL, NULL, '2011-10-23 21:53:06.350206', '2011-10-23 21:53:06.350206')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tampa Bay' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Atlanta' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (2, 30, 17, NULL, NULL, '2011-10-23 21:53:06.352821', '2011-10-23 21:53:06.352821')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Baltimore' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cincinnati' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (7, 3, 17, NULL, NULL, '2011-10-23 21:53:06.355246', '2011-10-23 21:53:06.355246')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Pittsburgh' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Cleveland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (8, 25, 17, NULL, NULL, '2011-10-23 21:53:06.357858', '2011-10-23 21:53:06.357858')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Detroit' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Green Bay' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (12, 11, 17, NULL, NULL, '2011-10-23 21:53:06.360579', '2011-10-23 21:53:06.360579')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Francisco' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'St. Louis' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (29, 27, 17, NULL, NULL, '2011-10-23 21:53:06.363002', '2011-10-23 21:53:06.363002')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Jets' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Jets' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Miami' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (17, 22, 17, NULL, NULL, '2011-10-23 21:53:06.365676', '2011-10-23 21:53:06.365676')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Chicago' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Minnesota' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (18, 6, 17, NULL, NULL, '2011-10-23 21:53:06.369107', '2011-10-23 21:53:06.369107')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Buffalo' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New England' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (19, 4, 17, NULL, NULL, '2011-10-23 21:53:06.371470', '2011-10-23 21:53:06.371470')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Carolina' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New Orleans' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (20, 5, 17, NULL, NULL, '2011-10-23 21:53:06.374030', '2011-10-23 21:53:06.374030')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Dallas' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'New York Giants' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."full_name" = 'New York Giants' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (21, 9, 17, NULL, NULL, '2011-10-23 21:53:06.377490', '2011-10-23 21:53:06.377490')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Washington' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Philadelphia' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (24, 32, 17, NULL, NULL, '2011-10-23 21:53:06.379948', '2011-10-23 21:53:06.379948')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Indianapolis' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Jacksonville' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (15, 14, 17, NULL, NULL, '2011-10-23 21:53:06.382126', '2011-10-23 21:53:06.382126')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Tennessee' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Houston' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (13, 31, 17, NULL, NULL, '2011-10-23 21:53:06.385280', '2011-10-23 21:53:06.385280')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Seattle' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Arizona' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (1, 28, 17, NULL, NULL, '2011-10-23 21:53:06.387787', '2011-10-23 21:53:06.387787')[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'San Diego' LIMIT 1
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Oakland' LIMIT 1[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (23, 26, 17, NULL, NULL, '2011-10-23 21:53:06.390135', '2011-10-23 21:53:06.390135')
+  [1m[36mTeam Load (0.1ms)[0m  [1mSELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Kansas City' LIMIT 1[0m
+  [1m[35mTeam Load (0.1ms)[0m  SELECT "teams".* FROM "teams" WHERE "teams"."city" = 'Denver' LIMIT 1
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO "matchups" ("home", "away", "week", "winner", "time", "created_at", "updated_at") VALUES (10, 16, 17, NULL, NULL, '2011-10-23 21:53:06.393383', '2011-10-23 21:53:06.393383')[0m
+DEPRECATION WARNING: RAILS_ROOT is deprecated. Please use ::Rails.root.to_s. (called from <top (required)> at /Users/markvance/Desktop/Football/config/initializers/data_loader.rb:5)
