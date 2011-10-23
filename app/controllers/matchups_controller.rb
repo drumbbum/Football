@@ -1,4 +1,6 @@
 class MatchupsController < ApplicationController
+  before_filter :authenticate_user!
+  
   # GET /matchups
   # GET /matchups.xml
   def index
