@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
     before_filter :authenticate_user!
-  
+    before_filter :need_profile!, :except => [:new, :create]
   # GET /profiles
   # GET /profiles.xml
   def index
@@ -15,10 +15,6 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.xml
   def show
-    if current_user.profile.nil?
-      redirect_to new_profile_path
-      return
-    end
     if params[:id]
       @profile = Profile.find(params[:id])
     else

@@ -37,8 +37,8 @@ class ApplicationController < ActionController::Base
 
   def need_profile!
     unless has_profile?
-      flash[:alert] = "Unauthorized Access"
-      redirect_to root_url
+      flash[:alert] = "Setup Profile"
+      redirect_to new_profile_path
       false
     end
   end
