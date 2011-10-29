@@ -1,0 +1,15 @@
+<h2>Teams Selected</h2>
+
+<table>
+  <tr>
+    <th>Team</th>
+    <th></th>
+  </tr>
+
+<% @picks.each do |pick| %>
+  <tr>
+    <td><%= Team.find_by_id(pick.team_id).full_name %></td>
+    <td><%= link_to 'Cancel Pick', pick, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

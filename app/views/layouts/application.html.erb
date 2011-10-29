@@ -22,8 +22,9 @@
 	
 	<div id="tabs">
     <%= link_to "Profiles", profiles_path %>
-    <%= link_to "Matchups", matchups_path(@matchup, :week_num => 1)  %>
-    <%= link_to "Leagues", leagues_path%>
+    <%= link_to "Matchups", matchups_path %>
+    <%= link_to "Leagues", leagues_path %>
+    <%= link_to "Make Picks", picks_path %>
 	</div>
 
 <%= yield %>

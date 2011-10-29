@@ -4,13 +4,9 @@ class MatchupsController < ApplicationController
   # GET /matchups
   # GET /matchups.xml
   def index
-    @week_num = params[:week_num]
-    
+    # Should be Current_Week
+    @week_num = params[:week_num] ? params[:week_num] : 1
     @matchups = Matchup.find_all_by_week(@week_num)
-    unless @matchups
-      # Should default to current week
-      @matchups = Matchup.find_all_by_week(1)
-    end
 
     respond_to do |format|
       format.html # index.html.erb

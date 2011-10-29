@@ -9,8 +9,6 @@ class ApplicationController < ActionController::Base
   def league_admin?
     if league_admin
       true
-    else
-      
     end
   end
 
