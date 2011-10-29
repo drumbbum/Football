@@ -1,16 +1,18 @@
 class PicksController < ApplicationController
+  before_filter :authenticate_user!
+  before_filter :need_profile!
+  
   # GET /picks
   # GET /picks.xml
   def index
     # Should be Current_Week
     @week_num = params[:week_num] ? params[:week_num] : 1
     @matchups = Matchup.find_all_by_week(@week_num)
+    @picks = []
     
     if has_profile?  
       @picks = Pick.find_all_by_profile_id_and_week(current_user.profile.id, @week_num)
     end
-    
-    @remaining = 
     
     respond_to do |format|
       format.html # index.html.erb
@@ -33,16 +35,18 @@ class PicksController < ApplicationController
   # GET /picks/new.xml
   def new
     @pick = Pick.new
-    @pick.profile_id = current_user.id
+    @pick.profile_id = current_user.profile_id
     @pick.week = params[:week]
     @pick.team_id = params[:team_id]
+    
+    profile = 
 
     respond_to do |format|
       if @pick.save
         format.html { redirect_to(:action => 'index', :week_num => @pick.week, :notice => 'Pick was successful, Good Luck!') }
         format.xml  { render :xml => @pick, :status => :created, :location => @pick }
       else
-        format.html { render :action => "new" }
+        format.html { redirect_to :action => "index", :week_num => @pick.week}
         format.xml  { render :xml => @pick.errors, :status => :unprocessable_entity }
       end
     end
@@ -92,15 +96,9 @@ class PicksController < ApplicationController
     @pick.destroy
 
     respond_to do |format|
-      format.html { redirect_to(picks_url) }
+      format.html { redirect_to(:action => 'index', :week_num => @pick.week, :notice => 'Pick was removed') }
       format.xml  { head :ok }
     end
   end
   
-  def remainingPicks(week)
-    if has_profile?
-      @picks = Pick.find_all_by_profile_id_and_week(current_user.profile.id, week)
-      numOfPicks = current_user.profile.num_of_picks
-    end
-  end
 end

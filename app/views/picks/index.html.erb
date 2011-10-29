@@ -1,8 +1,5 @@
-<% unless @picks.empty? %>
-  <%= render "selected" %>
-<% end %>
-
-<h1>Listing matchups for Week <%= @week_num %></h1>
+<h1>Listing Games for Week <%= @week_num %></h1>
+<h2>Picks Remaining: <%= picks_remaining(@week_num) %></h2>
 
 <%= render "weeks" %>
 
@@ -28,3 +25,7 @@
   </tr>
 <% end %>
 </table>
+
+<% unless @picks.empty? %>
+  <%= render "selected" %>
+<% end %>
