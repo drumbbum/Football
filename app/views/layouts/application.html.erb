@@ -13,12 +13,18 @@
 	
 	<div id="user_nav">
 	  <% if user_signed_in? %>
+	    <% if has_profile? %>
+        Hello, <%= current_user.profile.first %>.  <%= link_to 'Edit My Profile', edit_profile_path(current_user.profile) %>
+    
+      <% end %><br />
 	    Signed in as <%= current_user.email %>. Not you?
 	    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 	  <% else %>
 	    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
 	  <% end %>
 	</div>
+	
+	-------------------------------
 	
 	<div id="tabs">
     <%= link_to "Profiles", profiles_path %>

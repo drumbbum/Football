@@ -2,25 +2,27 @@
 
 <table>
   <tr>
+    <th></th>
+    <% if league_admin? %><th></th><% end %>
     <th>First Name</th>
     <th>Last name</th>
     <th>Paid</th>
     <th>Favorite Team</th>
-    <th></th>
-    <th></th>
+    
+
     <th></th>
   </tr>
 
 <% @profiles.each do |profile| %>
   <tr>
+    <td><%= link_to 'View', profile %></td>
+    <% if league_admin? %>
+      	<td><%= link_to 'Edit', edit_profile_path(profile) %></td>
+  	<% end %>
     <td><%= profile.first %></td>
     <td><%= profile.last %></td>
     <td><%= profile.paid %></td>
     <td><%= Team.find_by_id(profile.favorite).name %></td>
-    <td><%= link_to 'Show', profile %></td>
-	<% if my_profile?(profile) || league_admin? %>
-    	<td><%= link_to 'Edit', edit_profile_path(profile) %></td>
-	<% end %>
 	
 	<% if league_admin? %>
     <td><%= link_to 'Destroy', profile, :confirm => 'Are you sure?', :method => :delete %></td>
