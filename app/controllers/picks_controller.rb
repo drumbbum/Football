@@ -34,18 +34,24 @@ class PicksController < ApplicationController
   # GET /picks/new
   # GET /picks/new.xml
   def new
+    
+    unless picks_remaining(params[:week]) > 0
+      flash[:alert] = 'You are out of picks!'
+      redirect_to(:action => 'index', :week_num => params[:week])
+      return
+    end
+    
     @pick = Pick.new
-    @pick.profile_id = current_user.profile_id
+    @pick.profile_id = current_user.profile.id
     @pick.week = params[:week]
     @pick.team_id = params[:team_id]
-    
-    profile = 
 
     respond_to do |format|
       if @pick.save
         format.html { redirect_to(:action => 'index', :week_num => @pick.week, :notice => 'Pick was successful, Good Luck!') }
         format.xml  { render :xml => @pick, :status => :created, :location => @pick }
       else
+        flash[:alert] = @pick.errors.values.first ? @pick.errors.values.first.first : "Error Saving"
         format.html { redirect_to :action => "index", :week_num => @pick.week}
         format.xml  { render :xml => @pick.errors, :status => :unprocessable_entity }
       end

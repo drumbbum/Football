@@ -37,7 +37,7 @@ class ApplicationController < ActionController::Base
 
   def need_profile!
     unless has_profile?
-      flash[:notice] = "Unauthorized Access"
+      flash[:alert] = "Unauthorized Access"
       redirect_to root_url
       false
     end
