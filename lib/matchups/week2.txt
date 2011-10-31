@@ -1,3 +1,4 @@
+Sun, Sep 18 	TIME (ET) 	Network
 Kansas City at Detroit 	1:00 PM 	CBS
 Baltimore at Tennessee 	1:00 PM 	CBS
 Cleveland at Indianapolis 	1:00 PM 	CBS
@@ -13,4 +14,5 @@ San Diego at New England 	4:15 PM 	CBS
 Cincinnati at Denver 	4:15 PM 	CBS
 Houston at Miami 	4:15 PM 	CBS
 Philadelphia at Atlanta 	8:20 PM 	NBC
+Mon, Sep 19 	TIME (ET) 	Network
 St. Louis at New York Giants 	8:30 PM 	ESPN

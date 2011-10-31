@@ -1,3 +1,4 @@
+Sun, Oct 30 	TIME (ET) 	Network
 Indianapolis at Tennessee 	1:00 PM 	CBS
 New Orleans at St. Louis 	1:00 PM 	FOX
 Miami at New York Giants 	1:00 PM 	CBS
@@ -10,4 +11,5 @@ New England at Pittsburgh 	4:15 PM 	CBS
 Cleveland at San Francisco 	4:15 PM 	CBS
 Cincinnati at Seattle 	4:15 PM 	CBS
 Dallas at Philadelphia 	8:20 PM 	NBC
+Mon, Oct 31 	TIME (ET) 	Network
 San Diego at Kansas City 	8:30 PM 	ESPN

@@ -7,7 +7,7 @@ namespace :bootstrap do
   desc "Add Team Names to Team"
   task :team => :environment do
     unless Team.all.size.eql?(32)
-      first_word = ['Green','Kansas','New','San','St.','Tampa','NY']
+      first_word = ['Green','Kansas','New','San','St.','Tampa']
       File.open('lib/teams.txt', 'r') do |f|
         while line = f.gets
           arr = line.split(' ')
@@ -41,7 +41,14 @@ namespace :bootstrap do
       matchups.each do |matchup|
         away = Team.find_by_city(matchup[0]) || Team.find_by_full_name(matchup[0])
         home = Team.find_by_city(matchup[1]) || Team.find_by_full_name(matchup[1])
-        Matchup.create(:away => away.id, :home => home.id, :week => i)
+        year = matchup[2]
+        month = matchup[3]
+        day = matchup[4]
+        hour = matchup[5]
+        minute = matchup[6]
+        datetime = DateTime.new(year, month, day, hour, minute)
+        
+        Matchup.create(:away => away.id, :home => home.id, :week => i, :time => datetime)
       end
     end
   end

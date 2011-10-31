@@ -1,3 +1,4 @@
+Sun, Sep 25 	TIME (ET) 	Network
 New England at Buffalo 	1:00 PM 	CBS
 San Francisco at Cincinnati 	1:00 PM 	FOX
 Miami at Cleveland 	1:00 PM 	CBS
@@ -13,4 +14,5 @@ Arizona at Seattle 	4:15 PM 	FOX
 Atlanta at Tampa Bay 	4:15 PM 	FOX
 Green Bay at Chicago 	4:15 PM 	FOX
 Pittsburgh at Indianapolis 	8:20 PM 	NBC
+Mon, Sep 26 	TIME (ET) 	Network
 Washington at Dallas 	8:30 PM 	ESPN

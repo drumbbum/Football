@@ -1,5 +1,8 @@
+Thu, Dec 15 	TIME (ET) 	Network
 Jacksonville at Atlanta 	8:20 PM 	NFLN
+Sat, Dec 17 	TIME (ET) 	Network
 Dallas at Tampa Bay 	8:20 PM 	NFLN
+Sun, Dec 18 	TIME (ET) 	Network
 Miami at Buffalo 	1:00 PM 	CBS
 Seattle at Chicago 	1:00 PM 	FOX
 Tennessee at Indianapolis 	1:00 PM 	CBS
@@ -13,4 +16,5 @@ New England at Denver 	4:15 PM 	CBS
 New York Jets at Philadelphia 	4:15 PM 	CBS
 Cleveland at Arizona 	4:15 PM 	CBS
 Baltimore at San Diego 	8:20 PM 	NBC
+Mon, Dec 19 	TIME (ET) 	Network
 Pittsburgh at San Francisco 	8:30 PM 	ESPN

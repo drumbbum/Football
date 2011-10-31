@@ -1,6 +1,8 @@
+Thu, Nov 24 	TIME (ET) 	Network
 Green Bay at Detroit 	12:30 PM 	FOX
 Miami at Dallas 	4:15 PM 	CBS
 San Francisco at Baltimore 	8:20 PM 	NFLN
+Sun, Nov 27 	TIME (ET) 	Network
 Minnesota at Atlanta 	1:00 PM 	FOX
 Cleveland at Cincinnati 	1:00 PM 	CBS
 Tampa Bay at Tennessee 	1:00 PM 	FOX
@@ -13,4 +15,5 @@ Washington at Seattle 	4:05 PM 	FOX
 New England at Philadelphia 	4:15 PM 	CBS
 Denver at San Diego 	4:15 PM 	CBS
 Pittsburgh at Kansas City 	8:20 PM 	NBC
+Mon, Nov 28 	TIME (ET) 	Network
 New York Giants at New Orleans 	8:30 PM 	ESPN

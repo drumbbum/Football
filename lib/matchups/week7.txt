@@ -1,13 +1,15 @@
-Seattle at Cleveland
-Atlanta at Detroit
-Houston at Tennessee
-Denver at Miami
-San Diego at New York Jets
-Chicago at Tampa Bay
-Washington at Carolina
-Pittsburgh at Arizona
-Kansas City at Oakland
-Green Bay at Minnesota
-St. Louis at Dallas
-Indianapolis at New Orleans
-Baltimore at Jacksonville
+Sun, Oct 23 	TIME (ET) 	Network
+Seattle at Cleveland 	1:00 PM 	FOX
+Atlanta at Detroit 	1:00 PM 	FOX
+Houston at Tennessee 	1:00 PM 	CBS
+Denver at Miami 	1:00 PM 	CBS
+San Diego at New York Jets 	1:00 PM 	CBS
+Chicago at Tampa Bay 	1:00 PM 	FOX
+Washington at Carolina 	1:00 PM 	FOX
+Pittsburgh at Arizona 	4:05 PM 	CBS
+Kansas City at Oakland 	4:05 PM 	CBS
+Green Bay at Minnesota 	4:15 PM 	FOX
+St. Louis at Dallas 	4:15 PM 	FOX
+Indianapolis at New Orleans 	8:20 PM 	NBC
+Mon, Oct 24 	TIME (ET) 	Network
+Baltimore at Jacksonville 	8:30 PM 	ESPN

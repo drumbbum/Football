@@ -1,4 +1,6 @@
+Thu, Sep 8 	TIME (ET) 	Network
 New Orleans at Green Bay 	8:30 PM 	NBC
+Sun, Sep 11 	TIME (ET) 	Network
 Atlanta at Chicago 	1:00 PM 	FOX
 Cincinnati at Cleveland 	1:00 PM 	CBS
 Buffalo at Kansas City 	1:00 PM 	CBS
@@ -12,5 +14,6 @@ Carolina at Arizona 	4:15 PM 	FOX
 Minnesota at San Diego 	4:15 PM 	FOX
 Seattle at San Francisco 	4:15 PM 	FOX
 Dallas at New York Jets 	8:20 PM 	NBC
+Mon, Sep 12 	TIME (ET) 	Network
 New England at Miami 	7:00 PM 	ESPN
 Oakland at Denver 	10:15 PM 	ESPN

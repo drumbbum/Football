@@ -1,3 +1,4 @@
+Sun, Oct 16 	TIME (ET) 	Network
 Carolina at Atlanta 	1:00 PM 	FOX
 Indianapolis at Cincinnati 	1:00 PM 	CBS
 San Francisco at Detroit 	1:00 PM 	FOX
@@ -10,4 +11,5 @@ Cleveland at Oakland 	4:05 PM 	CBS
 Dallas at New England 	4:15 PM 	FOX
 New Orleans at Tampa Bay 	4:15 PM 	FOX
 Minnesota at Chicago 	8:20 PM 	NBC
+Mon, Oct 17 	TIME (ET) 	Network
 Miami at New York Jets 	8:30 PM 	ESPN

@@ -7,8 +7,11 @@
     <th>First Name</th>
     <th>Last name</th>
     <th>Paid</th>
-    <th>Favorite Team</th>
-    
+    <th>Picks Left</th>
+    <% if league_admin? %><th></th><% end %>
+    <% (1..17).each do |week| %>
+      <th>Week <%= week %></th>
+    <% end %>
 
     <th></th>
   </tr>
@@ -22,11 +25,30 @@
     <td><%= profile.first %></td>
     <td><%= profile.last %></td>
     <td><%= profile.paid %></td>
-    <td><%= Team.find_by_id(profile.favorite).name %></td>
+    <td><%= profile.picks_left %></td>
 	
 	<% if league_admin? %>
     <td><%= link_to 'Destroy', profile, :confirm => 'Are you sure?', :method => :delete %></td>
 	<% end %>
+	
+	<% (1..17).each do |week| %>
+	<td>
+    <% weekly_picks(profile, week).each do |pick| %>
+      <% if pick.has_winner? %>
+        <% if pick.good_pick? %>
+          <div id="winner">W 
+        <% else %>
+          <div id="loser">L 
+        <% end %>
+      <% else %>
+      <div>
+      <% end %>
+      <%= Team.find_by_id(pick.team_id).name%><br />
+      </div>
+    <% end %>
+  </td>      
+  <% end %>
+
   </tr>
 <% end %>
 </table>

@@ -6,7 +6,7 @@ class MatchupsController < ApplicationController
   def index
     # Should be Current_Week
     @week_num = params[:week_num] ? params[:week_num] : 1
-    @matchups = Matchup.find_all_by_week(@week_num)
+    @matchups = Matchup.find_all_by_week(@week_num).sort_by { |matchup| [ matchup.time, matchup.away ] }
 
     respond_to do |format|
       format.html # index.html.erb

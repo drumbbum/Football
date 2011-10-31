@@ -1,3 +1,4 @@
+Sun, Oct 9 	TIME (ET) 	Network
 Philadelphia at Buffalo 	1:00 PM 	FOX
 Kansas City at Indianapolis 	1:00 PM 	CBS
 Arizona at Minnesota 	1:00 PM 	FOX
@@ -10,4 +11,5 @@ Tampa Bay at San Francisco 	4:05 PM 	FOX
 New York Jets at New England 	4:15 PM 	CBS
 San Diego at Denver 	4:15 PM 	CBS
 Green Bay at Atlanta 	8:20 PM 	NBC
+Mon, Oct 10 	TIME (ET) 	Network
 Chicago at Detroit 	8:30 PM 	ESPN

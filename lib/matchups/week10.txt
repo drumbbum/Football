@@ -1,4 +1,6 @@
+Thu, Nov 10 	TIME (ET) 	Network
 Oakland at San Diego 	8:20 PM 	NFLN
+Sun, Nov 13 	TIME (ET) 	Network
 New Orleans at Atlanta 	1:00 PM 	FOX
 Detroit at Chicago 	1:00 PM 	FOX
 Pittsburgh at Cincinnati 	1:00 PM 	CBS
@@ -13,4 +15,5 @@ Tennessee at Carolina 	1:00 PM 	CBS
 Baltimore at Seattle 	4:05 PM 	CBS
 New York Giants at San Francisco 	4:15 PM 	FOX
 New England at New York Jets 	8:20 PM 	NBC
+Mon, Nov 14 	TIME (ET) 	Network
 Minnesota at Green Bay 	8:30 PM 	ESPN

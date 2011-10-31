@@ -21,7 +21,7 @@
         <td>TBD</td>
         <% end %>
         
-    <td><%= matchup.time %> TBD </td>
+    <td><%= matchup.time.to_formatted_s(:short) %> PM</td>
   </tr>
 <% end %>
 </table>

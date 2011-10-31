@@ -1,3 +1,4 @@
+Sun, Oct 2 	TIME (ET) 	Network
 Carolina at Chicago 	1:00 PM 	FOX
 Buffalo at Cincinnati 	1:00 PM 	CBS
 Tennessee at Cleveland 	1:00 PM 	CBS
@@ -13,4 +14,5 @@ Miami at San Diego 	4:15 PM 	CBS
 Denver at Green Bay 	4:15 PM 	CBS
 New England at Oakland 	4:15 PM 	CBS
 New York Jets at Baltimore 	8:20 PM 	NBC
+Mon, Oct 3 	TIME (ET) 	Network
 Indianapolis at Tampa Bay 	8:30 PM 	ESPN

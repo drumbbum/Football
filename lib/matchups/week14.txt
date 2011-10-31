@@ -1,4 +1,6 @@
+Thu, Dec 8 	TIME (ET) 	Network
 Cleveland at Pittsburgh 	8:20 PM 	NFLN
+Sun, Dec 11 	TIME (ET) 	Network
 Houston at Cincinnati 	1:00 PM 	CBS
 Minnesota at Detroit 	1:00 PM 	FOX
 Oakland at Green Bay 	1:00 PM 	CBS
@@ -13,4 +15,5 @@ San Francisco at Arizona 	4:05 PM 	FOX
 Chicago at Denver 	4:05 PM 	FOX
 Buffalo at San Diego 	4:15 PM 	CBS
 New York Giants at Dallas 	8:20 PM 	NBC
+Mon, Dec 12 	TIME (ET) 	Network
 St. Louis at Seattle 	8:30 PM 	ESPN

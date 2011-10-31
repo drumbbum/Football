@@ -1,4 +1,6 @@
+Thu, Nov 17 	TIME (ET) 	Network
 New York Jets at Denver 	8:20 PM 	NFLN
+Sun, Nov 20 	TIME (ET) 	Network
 Tennessee at Atlanta 	1:00 PM 	CBS
 Jacksonville at Cleveland 	1:00 PM 	CBS
 Carolina at Detroit 	1:00 PM 	FOX
@@ -11,4 +13,5 @@ Arizona at San Francisco 	4:05 PM 	FOX
 Seattle at St. Louis 	4:05 PM 	FOX
 San Diego at Chicago 	4:15 PM 	CBS
 Philadelphia at New York Giants 	8:20 PM 	NBC
+Mon, Nov 21 	TIME (ET) 	Network
 Kansas City at New England 	8:30 PM 	ESPN

@@ -1,3 +1,4 @@
+Sun, Nov 6 	TIME (ET) 	Network
 New York Jets at Buffalo 	1:00 PM 	CBS
 Seattle at Dallas 	1:00 PM 	CBS
 Atlanta at Indianapolis 	1:00 PM 	FOX
@@ -11,4 +12,5 @@ New York Giants at New England 	4:15 PM 	FOX
 St. Louis at Arizona 	4:15 PM 	FOX
 Green Bay at San Diego 	4:15 PM 	FOX
 Baltimore at Pittsburgh 	8:20 PM 	NBC
+Mon, Nov 7 	TIME (ET) 	Network
 Chicago at Philadelphia 	8:30 PM 	ESPN

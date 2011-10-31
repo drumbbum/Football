@@ -1,4 +1,6 @@
+Thu, Dec 1 	TIME (ET) 	Network
 Philadelphia at Seattle 	8:20 PM 	NFLN
+Sun, Dec 4 	TIME (ET) 	Network
 Tennessee at Buffalo 	1:00 PM 	CBS
 Kansas City at Chicago 	1:00 PM 	CBS
 Baltimore at Cleveland 	1:00 PM 	CBS
@@ -13,4 +15,5 @@ Green Bay at New York Giants 	4:15 PM 	FOX
 Dallas at Arizona 	4:15 PM 	FOX
 St. Louis at San Francisco 	4:15 PM 	FOX
 Indianapolis at New England 	8:20 PM 	NBC
+Mon, Dec 5 	TIME (ET) 	Network
 San Diego at Jacksonville 	8:30 PM 	ESPN

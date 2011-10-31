@@ -22,7 +22,7 @@
         <td>TBD</td>
         <% end %>
         
-    <td><%= matchup.time %> TBD </td>
+    <td><%= matchup.time.to_formatted_s(:short) %> TBD </td>
     <td><%= link_to 'Show', matchup %></td>
     <td><%= link_to 'Edit', edit_matchup_path(matchup) %></td>
   </tr>

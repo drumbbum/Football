@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
   helper_method :has_profile?
   helper_method :picks_remaining
   helper_method :need_profile!
+  helper_method :weekly_picks
+  helper_method :get_matchup
 
   private
 
@@ -26,12 +28,21 @@ class ApplicationController < ActionController::Base
 
   ## PaidPicks are the total amount of picks each week
   ## This will be decremented with losses
+  
+  def weekly_picks(profile, week)
+    profile.picks & Pick.find_all_by_week(week)
+  end
 
   def picks_remaining(week)
-    unless week.nil?
-      paidPicks = current_user.profile ? current_user.profile.num_of_picks : 0
+    unless week.nil?      
+      picksLeft = current_user.profile ? current_user.profile.picks_left : 0
       takenPicks = current_user.profile ? current_user.profile.picks & Pick.find_all_by_week(week) : []
-      return paidPicks - takenPicks.size
+      remaining = picksLeft - takenPicks.size
+      if remaining < 0
+        0
+      else
+        remaining
+      end 
     end
   end
 
@@ -42,4 +53,10 @@ class ApplicationController < ActionController::Base
       false
     end
   end
+  
+  def get_matchup(week, team_id)
+    @matchup = Matchup.find_by_week_and_home(week, team_id)
+    @matchup ||= Matchup.find_by_week_and_away(week, team_id)
+  end
+
 end
