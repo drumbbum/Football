@@ -1,7 +1,7 @@
 namespace :bootstrap do
   
   desc "Run all necessary tasks"
-  task :all => [:league, :matchup] do
+  task :all => [:matchup] do
   end
   
   desc "Add Team Names to Team"
@@ -53,9 +53,9 @@ namespace :bootstrap do
     end
   end
   
-  desc "Seed a league"
-  task :league => :environment do
-    League.create(:name => "Strict League", :admin => 1, :repick => false, :show_paid => false, :show_history => false)
-    League.create(:name => "Loose League", :admin => 1, :repick => true, :show_paid => true, :show_history => true)
-  end
+  # desc "Seed a league"
+  # task :league => :environment do
+  #   League.create(:name => "Strict League", :admin => 1, :repick => false, :show_paid => false, :show_history => false)
+  #   League.create(:name => "Loose League", :admin => 1, :repick => true, :show_paid => true, :show_history => true)
+  # end
 end
