@@ -1,8 +1,6 @@
-<p id="notice"><%= notice %></p>
-
 <p>
-  <b>Admin:</b>
-  <%= @league.admin %>
+  <b>Name:</b>
+  <%= @league.name %>
 </p>
 
 <p>
@@ -10,6 +8,26 @@
   <%= @league.repick %>
 </p>
 
+<p>
+  <b>Show Paid:</b>
+  <%= @league.show_paid %>
+</p>
+
+<p>
+  <b>Show History:</b>
+  <%= @league.show_history %>
+</p>
+
+<p>
+  <b>League Admins:</b><br/>
+  <% unless @league.admins.nil? %>
+    <% for profile in @league.admins %>
+        <%= profile.first %> <%= profile.last %><br/>
+    <% end %>
+    
+  <% end %>
+</p>
+  
 
 <%= link_to 'Edit', edit_league_path(@league) %> |
 <%= link_to 'Back', leagues_path %>

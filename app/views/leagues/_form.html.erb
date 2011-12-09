@@ -11,16 +11,20 @@
     </div>
   <% end %>
   <div class="field">
-    <%= f.label :name %><br />
+    Name Of The League<br />
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :admin %><br />
-    <%= f.text_field :admin %>
+   Give your members the ability to repick a team from week to week:<br />
+    <%= f.check_box :repick %> <%= f.label :repick %>
   </div>
   <div class="field">
-    <%= f.label :repick %><br />
-    <%= f.check_box :repick %>
+    Make status of payment public:<br />
+    <%= f.check_box :show_paid %> <%= f.label :show_paid %>
+  </div>
+  <div class="field">
+    Make member pick history public:<br />
+    <%= f.check_box :show_history %> <%= f.label :show_history %>
   </div>
   <div class="actions">
     <%= f.submit %>

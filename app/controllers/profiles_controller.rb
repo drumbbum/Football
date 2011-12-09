@@ -1,10 +1,12 @@
 class ProfilesController < ApplicationController
     before_filter :authenticate_user!
     before_filter :need_profile!, :except => [:new, :create]
+    before_filter :need_league!, :except => [:new, :create, :edit, :update]
+    
   # GET /profiles
   # GET /profiles.xml
   def index
-    @profiles = Profile.all
+    @profiles = current_league.profiles
 
     respond_to do |format|
       format.html # index.html.erb
@@ -52,7 +54,6 @@ class ProfilesController < ApplicationController
   def create
     @profile = Profile.new(params[:profile])
     @profile.user_id = current_user.id
-    @profile.num_of_picks = params[:num_of_picks]
 
     respond_to do |format|
       if @profile.save

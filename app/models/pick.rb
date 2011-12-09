@@ -1,5 +1,7 @@
 class Pick < ActiveRecord::Base
   belongs_to :profile
+  belongs_to :league
+  has_one :team
   validates_uniqueness_of :profile_id, :scope => [:team_id, :week], :message => 'Pick Already Selected'
   
   def has_winner?

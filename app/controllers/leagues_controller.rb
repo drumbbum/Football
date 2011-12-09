@@ -42,9 +42,14 @@ class LeaguesController < ApplicationController
   # POST /leagues.xml
   def create
     @league = League.new(params[:league])
+    @league.profiles << current_user.profile
 
     respond_to do |format|
       if @league.save
+        membership = Membership.find_by_league_id_and_profile_id(@league.id, current_user.profile.id)
+        membership.admin = true
+        membership.num_of_picks = 0
+        membership.save
         format.html { redirect_to(@league, :notice => 'League was successfully created.') }
         format.xml  { render :xml => @league, :status => :created, :location => @league }
       else
@@ -80,5 +85,18 @@ class LeaguesController < ApplicationController
       format.html { redirect_to(leagues_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  def select
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml
+    end
+  end
+  
+  def pick_league
+    puts "THIS IS GETTING RUN"
+    set_current_league(params[:league_select])
+    redirect_to(:back)
   end
 end

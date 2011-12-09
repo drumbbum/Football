@@ -1,0 +1,28 @@
+<p>
+  <b>League:</b>
+  <%= League.find_by_id(@membership.league_id).name %>
+</p>
+
+<p>
+  <b>Member:</b>
+  <%= Profile.find_by_id(@membership.profile_id).full_name %>
+</p>
+
+<p>
+  <b>Num of picks:</b>
+  <%= @membership.num_of_picks %>
+</p>
+
+<p>
+  <b>Paid:</b>
+  <%= @membership.paid %>
+</p>
+
+<p>
+  <b>Admin:</b>
+  <%= @membership.admin %>
+</p>
+
+
+<%= link_to 'Edit', edit_membership_path(@membership) %> |
+<%= link_to 'Back', memberships_path %>

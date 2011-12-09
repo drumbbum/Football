@@ -1,5 +1,5 @@
 <h1>Listing Players</h1>
-
+<% if has_league? %>
 <table>
   <tr>
     <th></th>
@@ -24,8 +24,9 @@
   	<% end %>
     <td><%= profile.first %></td>
     <td><%= profile.last %></td>
-    <td><%= profile.paid %></td>
-    <td><%= profile.picks_left %></td>
+    <% league = current_league %>
+    <td><%= profile.league_membership(league).paid %></td>
+    <td><%= profile.picks_left(league) %></td>
 	
 	<% if league_admin? %>
     <td><%= link_to 'Destroy', profile, :confirm => 'Are you sure?', :method => :delete %></td>
@@ -54,6 +55,7 @@
 </table>
 
 <br />
+<% end %>
 <% unless has_profile? %>
 <%= link_to 'New Profile', new_profile_path %>
 <% end %>

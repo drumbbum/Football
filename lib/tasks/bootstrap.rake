@@ -55,6 +55,7 @@ namespace :bootstrap do
   
   desc "Seed a league"
   task :league => :environment do
-    League.create(:name => "Example League", :admin => 1, :repick => true)
+    League.create(:name => "Strict League", :admin => 1, :repick => false, :show_paid => false, :show_history => false)
+    League.create(:name => "Loose League", :admin => 1, :repick => true, :show_paid => true, :show_history => true)
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111021200613) do
+ActiveRecord::Schema.define(:version => 20111201191322) do
 
   create_table "comments", :force => true do |t|
     t.integer  "author"
@@ -22,8 +22,9 @@ ActiveRecord::Schema.define(:version => 20111021200613) do
 
   create_table "leagues", :force => true do |t|
     t.string   "name"
-    t.integer  "admin"
     t.boolean  "repick"
+    t.boolean  "show_paid"
+    t.boolean  "show_history"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -38,8 +39,19 @@ ActiveRecord::Schema.define(:version => 20111021200613) do
     t.datetime "updated_at"
   end
 
+  create_table "memberships", :force => true do |t|
+    t.integer  "league_id"
+    t.integer  "profile_id"
+    t.integer  "num_of_picks"
+    t.boolean  "paid"
+    t.boolean  "admin"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "picks", :force => true do |t|
     t.integer  "profile_id"
+    t.integer  "league_id"
     t.integer  "team_id"
     t.integer  "week"
     t.datetime "created_at"
@@ -49,11 +61,8 @@ ActiveRecord::Schema.define(:version => 20111021200613) do
   create_table "profiles", :force => true do |t|
     t.string   "first"
     t.string   "last"
-    t.boolean  "paid"
-    t.integer  "num_of_picks"
     t.integer  "favorite"
     t.integer  "user_id"
-    t.integer  "league_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

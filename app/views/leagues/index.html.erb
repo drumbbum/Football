@@ -1,9 +1,12 @@
 <h1>Listing leagues</h1>
 
 <table>
+
   <tr>
-    <th>Admin</th>
+    <th>League Name</th>
     <th>Repick</th>
+    <th>Show Paid</th>
+    <th>Show History</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,11 +14,15 @@
 
 <% @leagues.each do |league| %>
   <tr>
-    <td><%= league.admin %></td>
+    <td><%= league.name %></td>
     <td><%= league.repick %></td>
+    <td><%= league.show_paid %></td>
+    <td><%= league.show_history %></td>
     <td><%= link_to 'Show', league %></td>
+    <% if admin?(league) %>
     <td><%= link_to 'Edit', edit_league_path(league) %></td>
     <td><%= link_to 'Destroy', league, :confirm => 'Are you sure?', :method => :delete %></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

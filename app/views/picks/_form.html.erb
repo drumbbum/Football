@@ -23,6 +23,7 @@
     <%= f.label :week %><br />
     <%= f.text_field :week %>
   </div>
+  <%= f.hidden_field :league_id, current_league.id %>
 
   <div class="actions">
     <%= f.submit %>

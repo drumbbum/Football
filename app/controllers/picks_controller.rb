@@ -1,6 +1,7 @@
 class PicksController < ApplicationController
   before_filter :authenticate_user!
   before_filter :need_profile!
+  before_filter :need_league!
   before_filter :pick_deadline, :only => [:new, :destroy]
   
   # GET /picks
@@ -12,7 +13,7 @@ class PicksController < ApplicationController
     @picks = []
     
     if has_profile?  
-      @picks = Pick.find_all_by_profile_id_and_week(current_user.profile.id, @week_num)
+      @picks = Pick.find_all_by_profile_id_and_league_id_and_week(current_user.profile.id,current_league.id, @week_num)
     end
     
     respond_to do |format|
@@ -46,6 +47,7 @@ class PicksController < ApplicationController
     @pick.profile_id = current_user.profile.id
     @pick.week = params[:week]
     @pick.team_id = params[:team_id]
+    @pick.league_id = params[:league_id]
 
     respond_to do |format|
       if @pick.save

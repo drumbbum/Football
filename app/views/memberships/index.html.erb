@@ -1,0 +1,33 @@
+<h1>Listing memberships for <%= current_league.name %></h1>
+
+<table>
+  <tr>
+    <th>Member</th>
+    <th>Picks</th>
+    <th>Paid</th>
+    <th>Admin</th>
+    <th></th>
+<% if admin?(current_league) %>
+    <th></th>
+    <th></th>
+<% end %>
+  </tr>
+
+<% current_league.memberships.each do |membership| %>
+  <tr>
+    <td><%= Profile.find_by_id(membership.profile_id).full_name %></td>
+    <td><%= membership.num_of_picks %></td>
+    <td><%= membership.paid %></td>
+    <td><%= membership.admin %></td>
+    <td><%= link_to 'Show', membership %></td>
+<% if admin?(current_league) %>    
+    <td><%= link_to 'Edit', edit_membership_path(membership) %></td>
+    <td><%= link_to 'Destroy', membership, :confirm => 'Are you sure?', :method => :delete %></td>
+<% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Join League', new_membership_path %>

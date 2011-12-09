@@ -24,25 +24,6 @@
     <%= collection_select(:profile, :favorite, Team.all, :id, :full_name) %>
   </div>
 
-<% if league_admin? %>
-  <div class="field">
-    <%= f.label :paid %><br />
-    <%= f.check_box :paid %>
-  </div>
-<% end %>
-<% unless has_profile? %>
-  <div>
-	<%= f.label :num_of_picks %><br />
-	<%= select_tag(:num_of_picks, options_for_select(1..16)) %><br />
-  </div>
-
-<p>  <div class="field">
-    <%= f.label :league %> Team<br />
-    <%= collection_select(:profile, :league_id, League.all, :id, :name) %>
-  </div>
-</p>
-<% end %>
-
   <div class="actions">
     <%= f.submit %>
   </div>

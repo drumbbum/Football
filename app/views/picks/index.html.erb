@@ -12,8 +12,8 @@
 
 <% @matchups.each do |matchup| %>
   <tr>
-    <td><%= link_to getFullName(matchup.away), :controller => "picks", :action => "new", :week => @week_num, :team_id => matchup.away %> @ 
-    <%= link_to getFullName(matchup.home), :controller => "picks", :action => "new", :week => @week_num, :team_id => matchup.home %></td>
+    <td><%= link_to getFullName(matchup.away), :controller => "picks", :action => "new", :week => @week_num, :team_id => matchup.away, :league_id => current_league.id %> @ 
+    <%= link_to getFullName(matchup.home), :controller => "picks", :action => "new", :week => @week_num, :team_id => matchup.home, :league_id => current_league.id %></td>
     
         <% if Team.find_by_id(matchup.winner)%>
     <td><%= getFullName(matchup.winner) %></td>

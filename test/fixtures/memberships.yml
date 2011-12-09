@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  league_id: 1
+  profile_id: 1
+  num_of_picks: 1
+  paid: false
+  admin: false
+
+two:
+  league_id: 1
+  profile_id: 1
+  num_of_picks: 1
+  paid: false
+  admin: false
