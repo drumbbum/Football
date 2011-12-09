@@ -1,4 +1,4 @@
-namespace :bootstrap do
+namespace :boot do
   
   desc "Run all necessary tasks"
   task :all => [:matchup] do
