@@ -1,0 +1,21 @@
+<h2>Comments</h2>
+
+<table>
+  <tr>
+    <th>Author</th>
+    <th>Message</th>
+    <th>Time</th>
+    <th></th>
+  </tr>
+
+<% @profile.comments.each do |comment| %>  <tr>
+    <td><%= Profile.find(comment.author).full_name %></td>
+    <td><%= comment.message %></td>
+    <td><%= comment.updated_at.to_formatted_s(:long) %></td>
+	
+	<% if current_user.id.eql?(comment.author) || my_profile?(@profile) %>
+    <td><%= link_to 'Delete', comment, :confirm => "Are you sure you want to delete the comment '#{comment.message}'?", :method => :delete %></td>
+	<% end %>
+  </tr>
+<% end %>
+</table>

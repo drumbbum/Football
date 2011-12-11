@@ -20,13 +20,10 @@
   <% end %>
 </p>
 
-<p>
-	<% if my_profile?(@profile) %>
-	<b>This is my profile</b>
-	<% end %>
-</p>
-
-
+  <%= render 'comments' %>
+<% if !my_profile?(@profile) %>
+  <%= render 'post' %>
+<% end %>
 <% if my_profile?(@profile) || league_admin? %>
 <%= link_to 'Edit Profile', edit_profile_path(@profile) %> |
 <% end %>

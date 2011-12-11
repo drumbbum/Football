@@ -22,6 +22,8 @@ class ProfilesController < ApplicationController
     else
       @profile = current_user.profile
     end
+    @comment = Comment.new
+    params[:p_id] = @profile.id
 
     respond_to do |format|
       format.html # show.html.erb
